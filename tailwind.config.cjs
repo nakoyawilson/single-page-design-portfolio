@@ -43,6 +43,7 @@ module.exports = {
       },
       margin: {
         "one-hundred": "6.25rem",
+        fifteen: "0.9375rem",
         thirty: "1.875rem",
       },
       backgroundImage: {
@@ -60,7 +61,8 @@ module.exports = {
         "right-top": "right 1.5rem top 1.5rem",
       },
       gap: {
-        slider: "1.875rem",
+        "mobile-slider": "0.9375rem",
+        "tablet-slider": "1.875rem",
       },
     },
   },

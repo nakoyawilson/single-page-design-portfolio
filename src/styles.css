@@ -11,3 +11,7 @@
 .slide {
   @apply rounded-ten overflow-hidden w-mobile-slide flex-grow flex-shrink-0;
 }
+
+.slider-btn {
+  @apply flex justify-center items-center rounded-full bg-project-black text-white w-16 h-16 cursor-pointer  disabled:bg-project-black/25 disabled:cursor-auto;
+}

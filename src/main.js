@@ -4,7 +4,7 @@ const prevBtn = document.querySelector("#prev");
 const nextBtn = document.querySelector("#next");
 const slidesContainer = document.querySelector("#slides-container");
 const slides = document.querySelectorAll(".slide");
-let currentIndex = 2;
+let currentIndex = 0;
 let isMoving = false;
 
 slidesContainer.style.transform = `translateX(-${
@@ -13,11 +13,9 @@ slidesContainer.style.transform = `translateX(-${
 
 const handleBtnClick = (e) => {
   if (isMoving) return;
-  isMoving = true;
+  // isMoving = true;
   e.currentTarget.id === "prev" ? currentIndex-- : currentIndex++;
-  slidesContainer.style.transform = `translateX(-${
-    currentIndex * slides[0].clientWidth
-  }px)`;
+  slidesContainer.style.transform = `translateX(-${currentIndex * 270}px)`;
   removeDisabledAttribute([prevBtn, nextBtn]);
   currentIndex === 0 && addDisabledAttribute([prevBtn]);
 };
