@@ -13,18 +13,79 @@
 
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
-  <body>
-    Free Consultation Design solutions made easy With over ten years of
-    experience in various design disciplines, I’m your one-stop shop for your
-    design needs. Graphic Design UI/UX Apps Photography Illustrations Motion
-    Graphics I’m Amy, and I’d love to work on your next project I love working
-    with others to create beautiful design solutions. I’ve designed everything
-    from brand illustrations to complete mobile apps. I’m also handy with a
-    camera! Free Consultation My Work Book a call with me I’d love to have a
-    chat to see how I can help you. The best first step is for us to discuss
-    your project during a free consultation. Then we can move forward from
-    there. Free Consultation Free Consultation
-
+  <body class="font-primary font-medium bg-light-cream text-project-black">
+    <header>
+      <img src="src/assets/logo.svg" alt="" />
+      <a href="#">Free Consultation</a>
+    </header>
+    <main>
+      <section>
+        <h1>Design solutions made easy</h1>
+        <p>
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+        <ul>
+          <li>Graphic Design</li>
+          <li>UI/UX</li>
+          <li>Apps</li>
+          <li>Photography</li>
+          <li>Illustrations</li>
+          <li>Motion Graphics</li>
+        </ul>
+      </section>
+      <section>
+        <img src="src/assets/image-amy.webp" alt="Amy" />
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p>
+          I love working with others to create beautiful design solutions. I’ve
+          designed everything from brand illustrations to complete mobile apps.
+          I’m also handy with a camera!
+        </p>
+        <a href="#">Free Consultation</a>
+      </section>
+      <section>
+        <h2>My Work</h2>
+        <div>
+          <div><img src="src/assets/image-slide-1.jpg" alt="" /></div>
+          <div><img src="src/assets/image-slide-2.jpg" alt="" /></div>
+          <div><img src="src/assets/image-slide-3.jpg" alt="" /></div>
+          <div><img src="src/assets/image-slide-4.jpg" alt="" /></div>
+          <div><img src="src/assets/image-slide-5.jpg" alt="" /></div>
+        </div>
+        <div>
+          <button id="prev" aria-label="Show previous image" disabled>
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="currentColor"
+                d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"
+              />
+            </svg>
+          </button>
+          <button id="next" aria-label="Show next image">
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="currentColor"
+                d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section>
+        <h2>Book a call with me</h2>
+        <p>
+          I’d love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+        <a href="#">Free Consultation</a>
+      </section>
+    </main>
+    <footer>
+      <img src="src/assets/logo.svg" alt="" />
+      <a href="#">Free Consultation</a>
+    </footer>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
