@@ -13,48 +13,103 @@
 
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
-  <body class="font-primary font-medium bg-light-cream text-project-black">
-    <header>
-      <img src="src/assets/logo.svg" alt="" />
-      <a href="#">Free Consultation</a>
+  <body
+    class="font-primary font-medium bg-light-cream text-project-black text-center"
+  >
+    <header
+      class="flex justify-between items-center w-mobile-container mx-auto py-4"
+    >
+      <img src="src/assets/logo.svg" alt="" class="w-12 md:w-16" />
+      <a href="#" class="btn bg-project-black">Free Consultation</a>
     </header>
-    <main>
-      <section>
-        <h1>Design solutions made easy</h1>
-        <p>
+    <main class="pt-4 pb-2 overflow-hidden">
+      <section class="w-mobile-container mx-auto">
+        <h1 class="font-bold text-4xl leading-forty-five">
+          Design solutions made easy
+        </h1>
+        <p
+          class="text-medium-brown text-base leading-twenty-six w-mobile-paragraph mt-4 mx-auto"
+        >
           With over ten years of experience in various design disciplines, I’m
           your one-stop shop for your design needs.
         </p>
-        <ul>
-          <li>Graphic Design</li>
-          <li>UI/UX</li>
-          <li>Apps</li>
-          <li>Photography</li>
-          <li>Illustrations</li>
-          <li>Motion Graphics</li>
+        <ul
+          class="text-white font-bold text-2xl leading-thirty grid grid-cols-2 gap-6 mt-8"
+        >
+          <li
+            class="p-6 flex items-end justify-start h-three-six-four bg-galactic-blue rounded-lg col-span-2 bg-graphic-design-pattern bg-no-repeat bg-right-top"
+          >
+            Graphic Design
+          </li>
+          <li
+            class="p-6 flex items-end justify-start h-one-eight-two bg-summer-yellow rounded-lg bg-ui-ux-pattern bg-no-repeat bg-right-top"
+          >
+            UI/UX
+          </li>
+          <li
+            class="p-6 flex items-end justify-start h-one-eight-two bg-project-pink rounded-lg bg-apps-pattern bg-no-repeat bg-right-top"
+          >
+            Apps
+          </li>
+          <li
+            class="p-6 flex items-end justify-start h-one-five-eight bg-light-red rounded-lg col-span-2 bg-illustrations-pattern bg-no-repeat bg-right-top"
+          >
+            Illustrations
+          </li>
+          <li
+            class="p-6 flex items-end justify-start h-one-eight-two bg-project-cyan rounded-lg col-span-2 bg-photography-pattern bg-no-repeat bg-right-top"
+          >
+            Photography
+          </li>
+          <li
+            class="p-6 flex items-end justify-start h-one-eight-two bg-dark-purple rounded-lg col-span-2 bg-motion-graphics-pattern bg-no-repeat bg-right-top"
+          >
+            Motion Graphics
+          </li>
         </ul>
       </section>
-      <section>
-        <img src="src/assets/image-amy.webp" alt="Amy" />
-        <h2>I’m Amy, and I’d love to work on your next project</h2>
-        <p>
+      <section class="w-mobile-container mt-one-hundred mx-auto">
+        <img
+          src="src/assets/image-amy.webp"
+          alt="Amy"
+          class="w-mobile-avatar mx-auto"
+          loading="lazy"
+        />
+        <h2 class="font-bold text-twenty-six leading-thirty-three mt-10">
+          I’m Amy, and I’d love to work on your next project
+        </h2>
+        <p class="text-medium-brown text-base leading-twenty-six mt-6">
           I love working with others to create beautiful design solutions. I’ve
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
         </p>
-        <a href="#">Free Consultation</a>
+        <a href="#" class="btn bg-light-red mt-6">Free Consultation</a>
       </section>
-      <section>
-        <h2>My Work</h2>
-        <div>
-          <div><img src="src/assets/image-slide-1.jpg" alt="" /></div>
-          <div><img src="src/assets/image-slide-2.jpg" alt="" /></div>
-          <div><img src="src/assets/image-slide-3.jpg" alt="" /></div>
-          <div><img src="src/assets/image-slide-4.jpg" alt="" /></div>
-          <div><img src="src/assets/image-slide-5.jpg" alt="" /></div>
+      <section class="mt-one-hundred">
+        <h2 class="font-bold text-2xl leading-thirty">My Work</h2>
+        <div class="mt-8 flex gap-slider" id="slides-container">
+          <div class="slide">
+            <img src="src/assets/image-slide-1.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="slide">
+            <img src="src/assets/image-slide-2.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="slide">
+            <img src="src/assets/image-slide-3.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="slide">
+            <img src="src/assets/image-slide-4.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="slide">
+            <img src="src/assets/image-slide-5.jpg" alt="" loading="lazy" />
+          </div>
         </div>
-        <div>
-          <button id="prev" aria-label="Show previous image" disabled>
+        <div class="flex justify-center items-center gap-4 mt-8">
+          <button
+            id="prev"
+            aria-label="Show previous image"
+            class="flex justify-center items-center rounded-full bg-project-black text-white w-16 h-16 disabled:bg-red"
+          >
             <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="currentColor"
@@ -62,7 +117,11 @@
               />
             </svg>
           </button>
-          <button id="next" aria-label="Show next image">
+          <button
+            id="next"
+            aria-label="Show next image"
+            class="flex justify-center items-center rounded-full bg-project-black text-white w-16 h-16 disabled:bg-red"
+          >
             <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill="currentColor"
@@ -72,19 +131,30 @@
           </button>
         </div>
       </section>
-      <section>
-        <h2>Book a call with me</h2>
-        <p>
+      <section
+        class="w-mobile-container bg-project-black text-light-cream rounded-ten px-6 py-12 mt-one-hundred mx-auto"
+      >
+        <h2 class="font-bold text-twenty-six leading-thirty-three">
+          Book a call with me
+        </h2>
+        <p class="text-base leading-twenty-six mt-6">
           I’d love to have a chat to see how I can help you. The best first step
           is for us to discuss your project during a free consultation. Then we
           can move forward from there.
         </p>
-        <a href="#">Free Consultation</a>
+        <a href="#" class="btn bg-light-red mt-6">Free Consultation</a>
       </section>
     </main>
-    <footer>
-      <img src="src/assets/logo.svg" alt="" />
-      <a href="#">Free Consultation</a>
+    <footer
+      class="flex justify-between items-center w-mobile-container mx-auto py-8"
+    >
+      <img
+        src="src/assets/logo.svg"
+        alt=""
+        class="w-12 md:w-16"
+        loading="lazy"
+      />
+      <a href="#" class="btn bg-project-black">Free Consultation</a>
     </footer>
     <script type="module" src="src/main.js"></script>
   </body>
