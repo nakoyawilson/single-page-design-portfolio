@@ -45,17 +45,16 @@ module.exports = {
         "one-hundred": "6.25rem",
         fifteen: "0.9375rem",
         thirty: "1.875rem",
+        "eighty-eight": "5.5rem",
       },
       backgroundImage: {
-        "apps-pattern": "url('./src/assets/pattern-apps.svg')",
-        "graphic-design-pattern":
-          "url('./src/assets/pattern-graphic-design.svg')",
-        "illustrations-pattern":
-          "url('./src/assets/pattern-illustrations.svg')",
+        "apps-pattern": "url('./assets/pattern-apps.svg')",
+        "graphic-design-pattern": "url('./assets/pattern-graphic-design.svg')",
+        "illustrations-pattern": "url('./assets/pattern-illustrations.svg')",
         "motion-graphics-pattern":
-          "url('./src/assets/pattern-motion-graphics.svg')",
-        "photography-pattern": "url('./src/assets/pattern-photography.svg')",
-        "ui-ux-pattern": "url('./src/assets/pattern-ui-ux.svg')",
+          "url('./assets/pattern-motion-graphics.svg')",
+        "photography-pattern": "url('./assets/pattern-photography.svg')",
+        "ui-ux-pattern": "url('./assets/pattern-ui-ux.svg')",
       },
       backgroundPosition: {
         "right-top": "right 1.5rem top 1.5rem",
