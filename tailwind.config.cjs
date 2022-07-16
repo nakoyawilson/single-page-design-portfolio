@@ -66,6 +66,7 @@ module.exports = {
         "eighty-eight": "5.5rem",
         "one-hundred": "6.25rem",
         "one-twenty": "7.5rem",
+        "one-thirty-six": "8.5rem",
       },
       padding: {
         thirty: "1.875rem",
