@@ -17,27 +17,33 @@
     class="font-primary font-medium bg-light-cream text-project-black text-center"
   >
     <header
-      class="flex justify-between items-center w-mobile-container mx-auto py-4"
+      class="flex justify-between items-center w-mobile-container md:w-tablet-container xl:w-desktop-container mx-auto py-4 md:py-thirty-four"
     >
       <img src="src/assets/logo.svg" alt="" class="w-12 md:w-16" />
-      <a href="#" class="btn bg-project-black">Free Consultation</a>
+      <a href="#" class="btn bg-project-black xl:hover:bg-galactic-blue"
+        >Free Consultation</a
+      >
     </header>
-    <main class="pt-4 pb-2 overflow-hidden">
-      <section class="w-mobile-container mx-auto">
-        <h1 class="font-bold text-4xl leading-forty-five">
+    <main class="pt-4 pb-2 md:pt-thirty md:pb-0 overflow-hidden">
+      <section
+        class="w-mobile-container md:w-tablet-container xl:w-desktop-container mx-auto"
+      >
+        <h1
+          class="font-bold text-4xl md:text-forty-four xl:text-fifty-six leading-forty-five md:leading-fifty-five xl:leading-seventy-one"
+        >
           Design solutions made easy
         </h1>
         <p
-          class="text-medium-brown text-base leading-twenty-six w-mobile-paragraph mt-4 mx-auto"
+          class="text-medium-brown text-base md:text-lg leading-twenty-six w-mobile-paragraph md:w-tablet-paragraph xl:w-desktop-paragraph mt-4 md:mt-twenty-seven xl:mt-twenty-three mx-auto"
         >
           With over ten years of experience in various design disciplines, I’m
           your one-stop shop for your design needs.
         </p>
         <ul
-          class="text-white font-bold text-2xl leading-thirty grid grid-cols-2 gap-6 mt-8"
+          class="text-white font-bold text-2xl leading-thirty grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-6 mt-8 md:mt-16 xl:mt-20"
         >
           <li
-            class="p-6 flex items-end justify-start h-three-six-four bg-galactic-blue rounded-lg col-span-2 bg-graphic-design-pattern bg-no-repeat bg-right-top"
+            class="p-6 flex items-end justify-start h-three-six-four bg-galactic-blue rounded-lg col-span-2 md:row-span-2 bg-graphic-design-pattern bg-no-repeat bg-right-top"
           >
             Graphic Design
           </li>
@@ -57,36 +63,52 @@
             Illustrations
           </li>
           <li
-            class="p-6 flex items-end justify-start h-one-eight-two bg-project-cyan rounded-lg col-span-2 bg-photography-pattern bg-no-repeat bg-right-top"
+            class="p-6 flex items-end justify-start h-one-eight-two bg-project-cyan rounded-lg col-span-2 xl:col-start-5 xl:col-end-7 xl:row-start-1 xl:row-end-2 bg-photography-pattern bg-no-repeat bg-right-top"
           >
             Photography
           </li>
           <li
-            class="p-6 flex items-end justify-start h-one-eight-two bg-dark-purple rounded-lg col-span-2 bg-motion-graphics-pattern bg-no-repeat bg-right-top"
+            class="p-6 flex items-end justify-start h-one-eight-two xl:h-one-five-eight bg-dark-purple rounded-lg col-span-2 bg-motion-graphics-pattern bg-no-repeat bg-right-top"
           >
             Motion Graphics
           </li>
         </ul>
       </section>
-      <section class="w-mobile-container mt-one-hundred mx-auto">
+      <section
+        class="w-mobile-container md:w-[48.25rem] xl:w-desktop-container md:relative md:-left-11 mt-one-hundred md:mt-one-twenty mx-auto md:text-left md:flex md:gap-sixty-nine md:items-center"
+      >
         <img
           src="src/assets/image-amy.webp"
           alt="Amy"
-          class="w-mobile-avatar mx-auto"
+          class="w-mobile-avatar md:w-tablet-avatar mx-auto"
           loading="lazy"
         />
-        <h2 class="font-bold text-twenty-six leading-thirty-three mt-10">
-          I’m Amy, and I’d love to work on your next project
-        </h2>
-        <p class="text-medium-brown text-base leading-twenty-six mt-6">
-          I love working with others to create beautiful design solutions. I’ve
-          designed everything from brand illustrations to complete mobile apps.
-          I’m also handy with a camera!
-        </p>
-        <a href="#" class="btn bg-light-red mt-6">Free Consultation</a>
+        <div class="xl:basis-[33.75rem]">
+          <h2
+            class="font-bold text-twenty-six md:text-thirty-two xl:text-forty leading-thirty-three md:leading-10 xl:leading-fifty mt-10 md:mt-0"
+          >
+            I’m Amy, and I’d love to work on your next project
+          </h2>
+          <p
+            class="text-medium-brown text-base md:text-lg leading-twenty-six mt-6 xl:mt-thirty-four"
+          >
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <a
+            href="#"
+            class="btn bg-light-red mt-6 xl:mt-8 xl:hover:bg-summer-yellow"
+            >Free Consultation</a
+          >
+        </div>
       </section>
-      <section class="mt-one-hundred">
-        <h2 class="font-bold text-2xl leading-thirty">My Work</h2>
+      <section class="mt-one-hundred md:mt-one-twenty">
+        <h2
+          class="font-bold text-2xl md:text-thirty-two leading-thirty md:leading-10"
+        >
+          My Work
+        </h2>
         <div
           class="flex gap-mobile-slider md:gap-tablet-slider mt-8 mx-6 md:mx-eighty-eight transition-transform duration-500"
           id="slides-container"
@@ -107,7 +129,7 @@
             <img src="src/assets/image-slide-5.jpg" alt="" loading="lazy" />
           </div>
         </div>
-        <div class="flex justify-center items-center gap-4 mt-8">
+        <div class="flex justify-center items-center gap-4 mt-8 md:mt-14">
           <button
             id="prev"
             aria-label="Show previous image"
@@ -142,21 +164,31 @@
         </div>
       </section>
       <section
-        class="w-mobile-container bg-project-black text-light-cream rounded-ten px-6 py-12 mt-one-hundred mx-auto"
+        class="w-mobile-container md:w-tablet-container xl:w-desktop-container bg-project-black text-light-cream rounded-ten px-6 py-12 md:pt-14 md:px-14 md:pb-16 xl:py-20 xl:pl-sixty-five xl:pr-ninety-five mt-one-hundred md:mt-one-twenty mx-auto xl:flex xl:justify-between xl:items-center"
       >
-        <h2 class="font-bold text-twenty-six leading-thirty-three">
-          Book a call with me
-        </h2>
-        <p class="text-base leading-twenty-six mt-6">
-          I’d love to have a chat to see how I can help you. The best first step
-          is for us to discuss your project during a free consultation. Then we
-          can move forward from there.
-        </p>
-        <a href="#" class="btn bg-light-red mt-6">Free Consultation</a>
+        <div class="xl:basis-2/3">
+          <h2
+            class="font-bold text-twenty-six md:text-thirty-two xl:text-forty leading-thirty-three md:leading-10 xl:leading-fifty xl:text-left"
+          >
+            Book a call with me
+          </h2>
+          <p
+            class="text-base md:text-lg leading-twenty-six mt-6 md:mt-twenty-six xl:mt-twenty-five md:w-cta-paragraph md:mx-auto xl:text-left xl:ml-0"
+          >
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <a
+          href="#"
+          class="btn bg-light-red mt-6 md:mt-twenty-six xl:mt-0 xl:hover:bg-summer-yellow"
+          >Free Consultation</a
+        >
       </section>
     </main>
     <footer
-      class="flex justify-between items-center w-mobile-container mx-auto py-8"
+      class="flex justify-between items-center w-mobile-container md:w-tablet-container xl:w-desktop-container mx-auto py-8 md:py-14 xl:pb-16"
     >
       <img
         src="src/assets/logo.svg"
@@ -164,7 +196,9 @@
         class="w-12 md:w-16"
         loading="lazy"
       />
-      <a href="#" class="btn bg-project-black">Free Consultation</a>
+      <a href="#" class="btn bg-project-black xl:hover:bg-galactic-blue"
+        >Free Consultation</a
+      >
     </footer>
     <script type="module" src="src/main.js"></script>
   </body>

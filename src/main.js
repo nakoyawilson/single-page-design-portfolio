@@ -7,15 +7,13 @@ const slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
 let isMoving = false;
 
-slidesContainer.style.transform = `translateX(-${
-  currentIndex * slides[0].clientWidth
-}px)`;
-
 const handleBtnClick = (e) => {
   if (isMoving) return;
   // isMoving = true;
   e.currentTarget.id === "prev" ? currentIndex-- : currentIndex++;
-  slidesContainer.style.transform = `translateX(-${currentIndex * 270}px)`;
+  slidesContainer.style.transform = `translateX(-${
+    currentIndex * slides[0].clientWidth
+  }px)`;
   removeDisabledAttribute([prevBtn, nextBtn]);
   currentIndex === 0 && addDisabledAttribute([prevBtn]);
 };
