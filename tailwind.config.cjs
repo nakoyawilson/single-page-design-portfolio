@@ -42,6 +42,7 @@ module.exports = {
         "desktop-container": "min(77.15278%, 1111px)",
         "desktop-paragraph": "min(65.70657%, 730px)",
         "cta-paragraph": "min(100%, 540px)",
+        "desktop-avatar": "445px",
       },
       height: {
         "one-five-eight": "9.875rem",
