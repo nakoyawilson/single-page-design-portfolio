@@ -9,7 +9,7 @@ let isMoving = false;
 
 const handleBtnClick = (e) => {
   if (isMoving) return;
-  // isMoving = true;
+  isMoving = true;
   e.currentTarget.id === "prev" ? currentIndex-- : currentIndex++;
   slidesContainer.style.transform = `translateX(-${
     currentIndex * slides[0].clientWidth
